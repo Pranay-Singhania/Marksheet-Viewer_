@@ -10,6 +10,7 @@ const Login = ({valid}) => {
     const[roll,setRoll]=useState(10050101001);
     const [branch,setBranch]=useState('CSE')
     const [showResult,setShowResult]=useState(false);
+    const [batch,setBatch]=useState('2019-2023');
 
     useEffect(()=>{
         console.log('valid is set to false',valid)
@@ -25,10 +26,15 @@ const Login = ({valid}) => {
     const onchangebranch=(e)=>{
         setBranch(e.target.value);
     }
+    const onchangebatch=(e)=>{
+        setBatch(e.target.value);
+    }
     const validSubmission=(e)=>{
         e.preventDefault();
         if(name && roll) {
-            branch!=='MCA'? setShowResult(branch):alert('MCA marksheet has not been uploaded')}
+            batch!=='2019-2023'? alert('Marksheet of this batch year has not been uploaded'):
+            branch!=='MCA'? setShowResult(branch):alert('MCA marksheet has not been uploaded');
+        }
         else {
             setShowResult(false);
             alert('Please fill all the fields');
@@ -58,7 +64,7 @@ const Login = ({valid}) => {
 
                             <Form.Group className="mb-3" controlId="formBasicEmail">
                                 <Form.Label>Batch Year</Form.Label>
-                                <Form.Select>
+                                <Form.Select value={batch} onChange={onchangebatch}>
                                     <option>2019-2023</option>
                                     <option>2020-2024</option>
                                     <option>2021-2025</option>
