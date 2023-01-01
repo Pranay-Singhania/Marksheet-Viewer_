@@ -1,4 +1,4 @@
-Marksheet Viewer (data fecthed by excel):
+Marksheet Viewer (data fetched by excel):
 
 User authorization page: 
 
