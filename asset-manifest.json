@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/Marksheet-Viewer_/static/css/main.92d0052c.css",
+    "main.js": "/Marksheet-Viewer_/static/js/main.c49c394d.js",
+    "static/media/sign.svg": "/Marksheet-Viewer_/static/media/sign.87cf69d17dfad995f6bc7cc92ff998e0.svg",
+    "index.html": "/Marksheet-Viewer_/index.html",
+    "main.92d0052c.css.map": "/Marksheet-Viewer_/static/css/main.92d0052c.css.map",
+    "main.c49c394d.js.map": "/Marksheet-Viewer_/static/js/main.c49c394d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.92d0052c.css",
+    "static/js/main.c49c394d.js"
+  ]
+}
